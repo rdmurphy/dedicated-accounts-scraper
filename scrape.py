@@ -34,12 +34,12 @@ def main():
 
             print 'Working on {0} (id: {1})'.format(payload[1], payload[0])
             for td in tr.findall('td'):
-                payload.append(td.text)
+                payload.append(td.text)  # grabs each <td> with the totals
 
             dpage = pq(DETAILED_URL + payload[0])
-            purpose = dpage.find('#purpose div.detail').text()
-            agency = dpage.find('#admin_agencies a').text()
-            note = dpage.find('#notes div.detail').text()
+            purpose = dpage.find('#purpose div.detail').text()  # purpose
+            agency = dpage.find('#admin_agencies a').text()  # agency
+            note = dpage.find('#notes div.detail').text()  # notes
             payload.append(purpose.strip().encode('utf8') if purpose else '')
             payload.append(agency.strip()[6:].encode('utf8') if agency else '')
             payload.append(note.strip().encode('utf8') if note else '')
