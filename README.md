@@ -1,7 +1,7 @@
 Dedicated Accounts Scraper
 ==========================
 
-Just showing my work! The code I used to scrape the [Texas Comptroller](http://www.window.state.tx.us/)'s to collect the data that was later used to build this [interactive](http://www.texastribune.org/library/data/dedicated-revenue-funds-list/).
+Just showing my work! The code I used to scrape the [Texas Comptroller](http://www.window.state.tx.us/)'s site to collect the data that was later used to build this [interactive](http://www.texastribune.org/library/data/dedicated-revenue-funds-list/).
 
 Installation & Usage
 --------------------
